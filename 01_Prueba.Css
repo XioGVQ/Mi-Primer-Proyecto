@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Asimovian&family=Story+Script&family=Varela+Round&display=swap');
+
+
+
+:root {
+    --color-letras: #00f7fffd;
+    --color-fondo: rgb(27, 0, 63);
+    --fuente-asimovian: "Asimovian", sans-serif;
+    --fuente-story: "Story Script", sans-serif;
+}
+
+
+*{
+    /* width: 800px; /*Sirve para el ancho de la caja (izquierda ↔ derecha*/
+    /* height: 20px; /*Sirve para el largo de la caja*/
+    margin: 0; /* deja un  espacio alrededor de la caja */
+    padding: 0% ; /* espacio interno alrededor del contenido */
+}
+
+body {
+    box-sizing: border-box; 
+    background-color: var(--color-fondo);
+}
+
+.header{ /*Crea un espacio entre el header y lo demas*/
+    padding: 2% 2% 1% 2%;
+}
+
+.header_menu{ /*Permite orgnizar los elementos y despues de eso darles un espacio del 2%*/
+    display: flex;
+
+    gap: 5%;
+}
+
+.Link_pag{
+    text-decoration: none; /*Le quito la decoracion a los links*/
+    font-family: var(--fuente-asimovian); /*Le pongo un tipo de fuente gracias a la variable*/
+    font-size: 1.4rem; /*Fuente autoajustable dependiendo del tamano de la pantalla*/
+    font-weight: 100px;
+    color: #ff0000;
+
+}
+
+.Link_pag:hover {
+    color: rgb(255, 230, 0);
+    background-color: rgb(0, 0, 0);
+    width: auto;
+    border: 2px solid #ff0202;
+    border-radius: 10px;
+    align-content: center;
+}
+
+.main_content{ /*En esto esta la seccion 1 y la imagen*/
+    padding: 2.5% 2% 2% 3%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 50px;
+}
+
+.seccion_1 { /*En esta secccion estan los titulos, parrafos y los botones*/
+    width: 50rem; /*Crea un limite para que los elementos no puedan acceder a mas espacio dsp de ahi*/
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+
+
+
+.first_Title {
+    font-family: var(--fuente-asimovian);
+    color: var(--color-letras);
+    
+}       
+
+.strong_Title {
+    width: 60px;
+    color: rgb(255, 0, 0);
+}
+
+.First_paragraph{
+    color: var(--color-letras);
+    font-size: 1.5rem;
+    font-family: var(--fuente-story);
+}
+
+.Botones_Usables{
+    display: flex;
+    width: auto;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.video_link {
+
+    /*Esta categoria es para la fuente*/
+    font-family: var(--fuente-story);
+    font-size: medium;
+    text-align: center;
+    text-decoration: dashed;
+    color: aliceblue;
+
+    /*Esta otra es para la caja alrededor del texto*/
+    width: 200px;
+    padding: 8px 1px;
+    background-color: rgb(144, 13, 13);
+    border-radius: 30px;
+
+    margin: 5px;
+}
+
+
+/*Esto cambia el color del boton cuando el cursor este encima */
+.video_link:hover{
+    color: rgb(255, 0, 0);
+    background-color: rgb(0, 7, 7);
+}
+
+
+.Alerta_Boton{
+    
+    /*Esta categoria es para la fuente*/
+    font-family: var(--fuente-asimovian);
+    font-size: medium;
+    text-align: center;
+    text-decoration: double;
+    color: aliceblue;
+
+    /*Esta otra es para la caja alrededor del texto*/
+    width: 200px;
+    padding: 8px 1px;
+    background-color: rgb(144, 13, 13);
+    border: 2px double #00ffea;
+    border-radius: 30px;
+
+    margin: 5px;
+}
+
+.Alerta_Boton:hover {
+    color: #ffe600;
+    background-color: rgb(0, 0, 0);
+    border: 2px double #1100ff;
+    border-radius: 30px;
+}
+
+
+/*Todo esto solo se aplica a 02_imagenes.html*/
+
+.main_content_img{ /*En esto esta la seccion img_gifs_1 y solo sirve para la pag 02_imagenes.html*/
+    padding: 1% 2% 2% 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.img_gifs_1{/*Esta seccion unicamente se usa en la pag imagenes*/
+    width: 70rem;
+    display: flex;
+    justify-content: end;
+    gap: 200px;
+}
+
+.first_title_img{
+    color: var(--color-letras);
+    font-family: var(--fuente-asimovian);
+    font-size: 2rem;
+    color: var(--color-letras);
+}
+
+
+/*Todo esto que esta de aqui en adelante solo se aplica a 03_Sobremi.html*/
+
+
+.RedesSociales{
+    width: 500px;
+    gap: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.RedesSociales_Subtitulo{
+    font-family: var(--fuente-story);
+    font-size: 2.5rem;
+    color: var(--color-letras);
+}
+
+.RedesSociales_Links{ /*Arreglar esto*/
+    /*Para acomodar los links dentro de una caja*/
+    padding: 2.5%;
+    text-align: center;
+
+
+
+    /*Para la fuente del link*/
+    font-family: var(--fuente-asimovian);
+    font-size: 1.7rem;
+    color: rgb(255, 251, 0);
+
+
+    /*Estilo del link*/
+    width: 22%;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 2.5px solid rgb(255, 0, 255);
+    text-decoration: none;
+}
+
+.RedesSociales_Links:hover{
+    text-decoration: dashed;
+    color: 02ffff;
+    background-color: rgb(0, 0, 0);
+    border: solid #02ffff;
+}
